@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Cece Law | Schedule a Consultation</title>
+  <meta name="description" content="Contact Cece Law to schedule a consultation for your criminal defense matter. Proudly serving the south suburbs of Chicago.">
+  <meta property="og:title" content="Contact Cece Law | Schedule a Consultation">
+  <meta property="og:description" content="Contact Cece Law to schedule a consultation for your criminal defense matter. Proudly serving the south suburbs of Chicago.">
+  <meta property="og:type" content="website">
+  
+  <link rel="stylesheet" href="/src/styles/global.css">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Contact Cece Law | Schedule a Consultation",
+  "description": "Contact Cece Law to schedule a consultation for your criminal defense matter. Proudly serving the south suburbs of Chicago."
+}
+  </script>
+</head>
+<body>
+
+  <!-- Sticky Header CTA -->
+  <header class="sticky-header">
+    <div class="container header-inner">
+      <a href="/index.html" class="logo hover-underline">Cece Law</a>
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li><a href="/criminal-defense.html" class="hover-underline">Criminal Defense</a></li>
+          <li><a href="/about.html" class="hover-underline">About Frank Cece Jr.</a></li>
+          <li><a href="/the-arena.html" class="hover-underline">The Arena</a></li>
+          <li><a href="/contact.html" class="btn">Book a Consultation</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    
+      <section class="bg" style="padding: var(--space-6) 0;">
+        <div class="container" style="max-width: 700px;">
+          <h1 class="font-display">Contact Cece Law</h1>
+          <p class="text-muted" style="margin-bottom: var(--space-5);">Secure disciplined representation. Please provide the details of your case below. Submitting this form does not establish an attorney-client relationship.</p>
+          
+          <div class="surface" style="padding: var(--space-5); border-radius: 4px; border: 1px solid var(--border);">
+            <form id="contactForm" onsubmit="event.preventDefault(); window.location.href='/thank-you.html';">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" required>
+              </div>
+              <div class="form-group">
+                <label for="charge">Reason for Contact / Charge Type</label>
+                <input type="text" id="charge">
+              </div>
+              <div class="form-group">
+                <label for="date">Court Date (Optional)</label>
+                <input type="date" id="date">
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Briefly describe your situation. Do not include highly sensitive details."></textarea>
+              </div>
+              <button type="submit" class="btn" style="width: 100%;">Request Consultation</button>
+            </form>
+          </div>
+          
+          <div style="margin-top: var(--space-5); text-align: center;">
+            <h3 class="font-display">Direct Contact</h3>
+            <p><a href="tel:+15551234567" class="hover-underline text-accent" style="font-size: 1.25rem;">(555) 123-4567</a></p>
+            <p class="text-muted" style="font-size: 0.9rem;">After-Hours Protocol: For immediate emergency assistance, please call and follow the emergency prompts.</p>
+          </div>
+        </div>
+      </section>
+    
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; gap: var(--space-4); flex-wrap: wrap;">
+        <div>
+          <h3 class="font-display">Cece Law</h3>
+          <p class="text-muted">Criminal Defense Representation for High-Stakes Cases.<br>Palos Heights, Bridgeview, Will County, South Suburbs.</p>
+        </div>
+        <div>
+          <h4 class="font-display">Contact</h4>
+          <p><a href="tel:+15551234567" class="hover-underline text-accent">555.123.4567</a></p>
+          <a href="/contact.html" class="btn btn-secondary">Request Consultation</a>
+        </div>
+      </div>
+      <p class="disclaimer">
+        Disclaimer: The information on this website is for general information purposes only. Nothing on this site should be taken as legal advice for any individual case or situation. This information is not intended to create, and receipt or viewing does not constitute, an attorney-client relationship. Prior results do not guarantee a similar outcome. Every case is unique.
+      </p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

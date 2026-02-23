@@ -1,0 +1,27 @@
+:root {
+  --cl-black: #000000;
+  --cl-graphite: #161616;
+  --cl-plum-black: #181315;
+  --cl-orchid-a: #8a7cb7;
+  --cl-orchid-b: #897cb6;
+  --cl-fog: #e7e7e7;
+  --cl-silver: #a4a4a4;
+  --bg: #181315;
+  --bg-elevated: #161616;
+  --surface: #161616;
+  --text: #e7e7e7;
+  --muted: #a4a4a4;
+  --accent: #8a7cb7;
+  --accent-strong: #897cb6;
+  --border: #a4a4a4;
+  --focus: #8a7cb7;
+  --font-display: "Marcellus", ui-serif, Georgia, serif;
+  --font-body: "Lato", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --container: min(1100px, 92vw);
+  --space-1: 0.5rem;
+  --space-2: 0.75rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2rem;
+  --space-6: 3rem;
+}
