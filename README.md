@@ -21,7 +21,7 @@ No login, backend, API key, analytics, or network request is used at runtime.
 
 ## Color references and uncertainty
 
-All editable source colors and additive assumptions live in [`src/data/basementPalette.ts`](src/data/basementPalette.ts). PPG names/codes are separated from estimated screen coordinates. At the time of this build, access to PPG's current color pages was unavailable in the build environment; consequently no digital value is labeled manufacturer-verified. Replace an estimate when a current physical PPG chip or official page is available.
+All editable source colors, physical-container details, specification ownership, OCR provenance, and additive assumptions live in [`src/data/basementPalette.ts`](src/data/basementPalette.ts). Physical manufacturer/product is intentionally separate from color name and color specification: a `PPG` or `MEN` prefix never changes the maker printed on the container. At the time of this build, current manufacturer pages were unavailable in the build environment; consequently no digital value is labeled manufacturer-verified. Replace an estimate when a current official page, physical chip, or instrument measurement is available—never replace the corrected inventory name based only on search results.
 
 ## Methodology
 

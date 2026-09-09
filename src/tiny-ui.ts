@@ -14,10 +14,11 @@ export function h(tag: string | ((props: Props) => Child), props: Props | null, 
     if (key === 'className') node.className = String(value);
     else if (key === 'style' && value && typeof value === 'object') Object.entries(value as Record<string,string|number>).forEach(([k,v])=>node.style.setProperty(k,String(v)));
     else if (key.startsWith('on') && typeof value === 'function') node.addEventListener(key.slice(2).toLowerCase(), value as EventListener);
-    else if (key === 'value') (node as HTMLInputElement).value = String(value);
+    else if (key === 'value') return;
     else if (value !== false && value != null) node.setAttribute(key, value === true ? '' : String(value));
   });
   append(node, children);
+  if (props && 'value' in props) (node as HTMLInputElement).value = String(props.value);
   return node;
 }
 function append(parent:Node, children:Child[]){const visit=(child:Child):void=>{if(Array.isArray(child)){child.forEach(visit);return}if(child===false||child==null||child===true)return;parent.appendChild(child instanceof Node?child:document.createTextNode(String(child)));};children.forEach(visit);}
