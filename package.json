@@ -1,0 +1,16 @@
+{
+  "name": "paint-remix-lab",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc -b && vite build",
+    "test": "node --experimental-strip-types --test src/lib/color.test.ts",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "dependencies": {
+    "vite": "^6.0.0",
+    "typescript": "^5.7.2"
+  }
+}
